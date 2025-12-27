@@ -4,8 +4,11 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.7.1-red.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Transformers](https://img.shields.io/badge/🤗%20Transformers-4.56.1-yellow.svg)](https://huggingface.co/transformers/)
+[![HuggingFace Model](https://img.shields.io/badge/🤗%20Model-pubmedbert--medical--embeddings-orange.svg)](https://huggingface.co/huzaifanasirrr/pubmedbert-medical-embeddings)
 
 > A domain-specific fine-tuned PubMedBERT model optimized for generating high-quality medical text embeddings using contrastive learning on recent PubMed Central articles.
+
+**🤗 Model Available on HuggingFace**: [huzaifanasirrr/pubmedbert-medical-embeddings](https://huggingface.co/huzaifanasirrr/pubmedbert-medical-embeddings)
 
 ---
 
@@ -181,8 +184,8 @@ streamlit
 ```python
 from sentence_transformers import SentenceTransformer
 
-# Load fine-tuned model
-model = SentenceTransformer('models/pubmedbert-medical-embeddings')
+# Load fine-tuned model from HuggingFace Hub
+model = SentenceTransformer('huzaifanasirrr/pubmedbert-medical-embeddings')
 
 # Generate embeddings
 texts = [

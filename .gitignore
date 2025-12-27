@@ -181,3 +181,4 @@ cython_debug/
 .cursorindexingignore
 /models
 /Report
+upload_to_huggingface.py
