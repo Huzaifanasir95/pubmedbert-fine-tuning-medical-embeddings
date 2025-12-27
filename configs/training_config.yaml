@@ -1,0 +1,29 @@
+# Training Configuration
+
+# Model settings
+model_name: "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext"
+output_path: "models/pubmedbert-medical-embeddings"
+
+# Training hyperparameters
+epochs: 4
+batch_size: 16
+learning_rate: 2e-5
+warmup_steps: 500
+max_seq_length: 512
+
+# Data settings
+train_file: "data/processed/train.csv"
+val_file: "data/processed/val.csv"
+test_file: "data/processed/test.csv"
+
+# Evaluation settings
+evaluation_steps: 500
+save_best_model: true
+
+# Logging
+use_wandb: false
+log_dir: "outputs/logs"
+
+# Device settings
+device: "cuda"  # or "cpu"
+fp16: true  # Use mixed precision training
